@@ -1,0 +1,24 @@
+{
+  "name"         : "packdat",
+  "version"      : "0.0.0",
+  "description"  : "Travel packing application.",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "angular-translate": "2.13.1",
+    "angular-translate-storage-cookie": "2.13.1",
+    "angular-translate-loader-static-files": "2.13.1",
+    "angular-cookies": "1.5.x",
+    "html5-boilerplate": "^5.3.0",
+    "bootstrap": "3.3.x",
+    "jquery": "3.1.0",
+    "jquery-ui": "1.12.1"
+  },
+  "resolutions": {
+    "jquery": "3.1.0",
+    "angular": "~1.5.0",
+    "moment": "2.8.4"
+  }
+}

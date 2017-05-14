@@ -1,0 +1,26 @@
+{
+  "name"         : "packdat",
+  "version"      : "0.0.0",
+  "description"  : "Travel packing application.",
+  "main"         : "server.js",
+  "scripts": {
+    "start:dev": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update Frontend packages": "bower update",
+    "install Frontend packages": "bower install"
+  },
+  "dependencies" : {
+    "express"    : "~4.0.0",
+    "cookie-parser": "~1.0.0",
+    "express-session": "~1.0.0",
+    "morgan"     : "~1.2.2",
+    "body-parser": "~1.5.2",
+    "method-override": "~2.1.2",
+    "mysql": "~2.5.4",
+    "require":"~2.4.0",
+    "passport" : "~0.1.17",
+    "passport-local" : "~0.1.6",
+    "connect-flash" : "~0.1.1",
+    "bcrypt-nodejs" : "latest"
+  }
+}

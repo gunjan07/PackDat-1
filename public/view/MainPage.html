@@ -1,0 +1,317 @@
+<div ng-controller="MainController" as >
+    <div>
+        <nav class="navbar navbar-default" id="header">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" id="logo" src="../resources/Asset 1.PNG">
+                </a>
+            </div>
+            <div id="packdat-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <button type="submit" class="btn btn-login">Login</button>
+                    </li>
+                    <li>
+                        <button type="submit" class="btn btn-signup">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div id="mainPageContent1">
+        <div class="col-lg-6" id="headerText">
+            <p id="p1">Reimagine Travel</p>
+            <p id="p2">With PackDat.</p>
+            <p id="p3">Your travel planning sidekick with friends.</p>
+            <button type="button" class="btn btnCustom btnYellow"> Start Adventure
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </button>
+            <p id="p4">30,248 travelers PackDat'd into their Trip</p>
+        </div>
+
+        <div class="col-lg-6" id="polaroidModule">
+            <div id="polaroidImage">
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/1e/3c/35/1e3c35c4c562fb7a5e3ae5ea1fcec1e6.jpg"
+                     class="polaroidImageLeft">
+                <img src="http://s8.favim.com/610/150626/green-nature-outfit-photo-Favim.com-2852438.jpg"
+                     class="polaroidImageRight">
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/52/88/80/5288809d18c098c124db7ec3daa83500.jpg"
+                     class="polaroidImageMiddle">
+            </div>
+            <div id="polaroidText">
+                <p id="headerPoloroid">Over 10 Cities, with 1M+ Live Travel Moments</p>
+                <p>Stay Connected with Live Moments from others on the place</p>
+                <p>you are planning to visit, to help plan your trip.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="screenShotContent">
+            <div>
+                <img src="../resources/Rectangle 414.png" class="screenImageLeft">
+                <img src="../resources/Rectangle 411.png" class="screenImageRight">
+                <img src="../resources/Rectangle 412.png" class="screenImageMiddle">
+            </div>
+
+            <div>
+                <p id="p5">Magical. Social. Super Simple</p>
+                <p>Get live updates from others on the place you are planning to visit,</p>
+                <p>to help you plan your trip. Add them into the itinerary so your friends can see it too!</p>
+                <p>Information, Directions, Reviews, are all in the listings!</p>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="col-lg-5 col-md-5" id="pictureRed">
+            <img src="../resources/Rectangle 418.png" id="imageRed">
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 col-md-7" id="textRed">
+            <h2>1 Click</h2>
+            <h2>Pack By Distance -</h2>
+            <p id="p6">so easy, it's like magic.</p>
+            <p id="p7">
+                Packdat allows you to simply add the experiences you love, into
+                your itinerary. And help you arrange them by the nearest distance
+                to go to, next! Click.... BOOM! You're ready!
+            </p>
+            <button type="button" class="btn btnCustom btnRed"> Start Adventure
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </button>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div id="locationsData">
+        <p>Here's where you can Packdat with</p>
+        <br>
+        <div>
+            <span class="locationSpacing">Singapore</span>
+            <span class="locationSpacing">Bangkok</span>
+            <span class="locationSpacing">Krabi</span>
+            <span class="locationSpacing">Phuket</span>
+            <span class="locationSpacing">Kuala Lumpur</span>
+        </div>
+        <br>
+        <div>
+            <span class="locationSpacing">Seoul</span>
+            <span class="locationSpacing">Tokyo</span>
+            <span class="locationSpacing">Taipei</span>
+            <span class="locationSpacing">Bali</span>
+        </div>
+        <button type="button" class="btn btnCustom btnYellow">Start your Trip!</button>
+    </div>
+
+</div>
+
+<style type="text/css">
+
+    #mainPageContent1 {
+        margin: 0 8%;
+    }
+
+    #logo {
+        width: 180px;
+        margin-left: 50px;
+    }
+
+    .btn-login {
+        margin-top: 20px;
+        background-color: white;
+        border: none;
+        font-weight: bold;
+
+    }
+
+    .btn-signup {
+        margin-left: 10px;
+        margin-top: 20px;
+        background-color: #007AFF;
+        color: white;
+        font-weight: bold;
+
+    }
+
+    #packdat-navbar {
+        margin-right: 70px;
+        height: 70px;
+        background: white;
+    }
+
+    #polaroidText {
+        text-align: center;
+    }
+
+    #headerText {
+        margin-top: 150px;
+    }
+
+    #headerPoloroid {
+        padding-top: 20px;
+        color: #007AFF;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .polaroidImageMiddle {
+        position: relative;
+        width: 320.94px;
+        height: 361.85px;
+        margin-left: 80px;
+        background: lightgrey;
+        padding: 12px 12px 60px;
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    }
+
+    .polaroidImageLeft {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 250px;
+        width: 238.19px;
+        height: 265.04px;
+        background: lightgrey;
+        padding: 12px 12px 40px;
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    }
+
+    .polaroidImageRight {
+        position: absolute;
+        margin-top: 50px;
+        width: 238.19px;
+        height: 265.04px;
+        background: lightgrey;
+        padding: 12px 12px 40px;
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    }
+
+    .screenImageMiddle {
+        position: relative;
+        width: 320.94px;
+        height: 320.94px;
+        margin-left: 100px;
+    }
+
+    .screenImageRight {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 300px;
+        width: 238.19px;
+        height: 238.19px;
+    }
+
+    .screenImageLeft {
+        position: absolute;
+        margin-top: 50px;
+        width: 238.19px;
+        height: 238.19px;
+    }
+
+    .btnCustom {
+        align-content: center;
+        font-weight: bold;
+        width: 200px;
+        height: 40px;
+        margin: 25px 0 10px 0;
+    }
+
+    .btnYellow {
+        background-color: yellow;
+
+    }
+
+    .btnRed {
+        background-color: #FF2D55;
+        border: 1px solid white;
+
+    }
+
+    hr {
+        border: solid 1px lightgrey;
+        width: 700px;
+    }
+
+    #p1 {
+        font-size: 34px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #p2 {
+        font-size: 54px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #p3 {
+        font-size: 24px;
+        font-weight: lighter;
+        margin: 0;
+    }
+
+    #p4 {
+        font-size: 10px;
+        font-weight: lighter;
+    }
+
+    #screenShotContent {
+        text-align: center;
+    }
+
+    #p5 {
+        color: #007AFF;
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 0;
+    }
+
+    .jumbotron {
+        background-color: #FF2D55;
+        height: 450px;
+    }
+
+    #pictureRed {
+
+    }
+
+    #imageRed {
+        width: 365.12px;
+        height: 352.4px;
+        float: right;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 45px;
+    }
+
+    #textRed {
+        color: white;
+    }
+
+    #p6 {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    #p7 {
+        word-wrap: break-word;
+        font-size: 15px;
+    }
+
+    #locationsData {
+        text-align: center;
+    }
+
+    .locationSpacing {
+        margin: 0 10px;
+    }
+
+</style>

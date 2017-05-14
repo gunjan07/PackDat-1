@@ -1,0 +1,115 @@
+
+	<style type="text/css">
+		body {
+		    font-family: SegoeUI-Bold, Segoe UI;
+		    font-weight: 700;
+		}
+		#closeBtn {
+			margin-top: 40px;
+			float: right;
+		}
+		#formContent{		
+			max-width: 40%;
+			margin: 0 auto;
+			text-align: left;			
+			text-transform: uppercase;
+
+		}
+		.inCenter{
+			text-align: center;
+			color: #95989a;
+		}
+		label {
+			color: #95989a;
+		}
+		hr {
+			border: solid 0.3px;	
+			color: #95989a;
+		}	
+		.form-control {			
+		    border: none;		    
+		    border-bottom: .5px solid #000000;
+		    border-radius: 0px;
+		    box-shadow: none;
+		}
+		.form-group{
+			margin: 20px 0;
+		}
+		#showPassword{
+			float: right;
+			font-size:10px;
+			color: #007aff;
+			padding-top: 5px;
+		}
+		.btnCustom {
+			width: 100%;
+			background-color: yellow;
+			border: none;
+			height: 35px;
+			margin: 20px 0;
+		}
+		.btn-facebook{
+			color:#fff;
+			background-color:#3b5998;
+			border-color:rgba(0,0,0,0.2)
+		}
+	</style>
+
+<div class="container">
+
+	<div>
+		<nav class="navbar">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">
+		        <img alt="Brand" src="Asset 1.PNG">
+		      </a>		       
+		    </div>
+		    <span id= "closeBtn" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+		</nav>
+	</div>
+
+	<div id ="formContent">
+
+		<div class="inCenter">
+			<p id="signup">Sign up</p><hr>
+
+			<i class="fa fa-facebook"></i> 
+			<a class="btn btn-block btn-social btn-facebook" style="margin-top: 20px;margin-bottom: 20px;">
+		        Continue With Facebook
+		    </a>
+			<div style="height: 10px; border-bottom: 1px solid black;">
+      		<span style="font-size: 10px; background-color: white; padding: 0 10px;">
+      		OR
+      		</span>
+    		</div>
+		</div>
+		<br>
+		<div id = "content">
+
+			<form>
+			 <div class="form-group">
+			    <label for="firsLlastName">First and Last Name</label>
+			    <input type="email" class="form-control" id="firsLlastName">
+			  </div>
+			  <div class="form-group">
+			    <label for="inputEmail">Email</label>
+			    <input type="email" class="form-control" id="inputEmail">
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPassword">Password</label><span id="showPassword">show</span>
+			    <input type="password" class="form-control" id="inputPassword">
+			  </div>
+			  <button type="submit" class="btnCustom">Sign Up</button>
+			</form>			
+		</div>
+		<div class="inCenter">
+			<p>Already have an account <span><a href="">Log in</a> </span></p>
+			<br><br>
+			<p>You are in for a magical trip</p>
+			<p>30,248 Trips Created</p>
+		</div>
+
+	</div>
+
+</div>
+
