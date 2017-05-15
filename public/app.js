@@ -15,4 +15,15 @@ angular
                 .when('/profile',{
                     templateUrl: '/view/Profile.html'
                 })
-}]);
+                .when('/Login',{
+                    templateUrl: '/view/Login.html'
+                })
+                .when('/Main',{
+                    templateUrl: '/view/Main.html'
+                })
+                .when('/Feedback',{
+                    templateUrl: '/view/Feedback.html'
+                })
+
+
+        }]);
