@@ -10,6 +10,7 @@ var bodyParser = require('body-parser');    // pull information from HTML POST (
 var session      = require('express-session');
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 
+app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
 app.use(morgan('dev'));                                         // log every request to the console
 app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
@@ -34,6 +35,8 @@ models.sequelize.sync().then(function() {
 }).catch(function(err) {
     console.log(err, "Something went wrong with the Database Update!")
 });
+
+require('./config/passport.js')(passport, models.user);
 
 module.exports = app;
 

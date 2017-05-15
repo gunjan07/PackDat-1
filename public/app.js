@@ -6,8 +6,13 @@ angular
         function($routeProvider) {
             $routeProvider
                 .when('/', {
-                    controller: 'MainController as mainCtrl',
-                    templateUrl: '/view/MainPage.html'
+                    templateUrl: '/view/MainPage.html',
                 })
-
+                .when('/signup', {
+                    templateUrl: '/view/SignUp.html',
+                    controller: 'SignUpController as signUpCtrl'
+                })
+                .when('/profile',{
+                    templateUrl: '/view/Profile.html'
+                })
 }]);

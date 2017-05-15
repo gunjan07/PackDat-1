@@ -1,5 +1,6 @@
 var  userController = require("../controllers/user");
 
+
 module.exports =  function (app,passport) {
     console.log("checking")
     app.get('/api/', function(req,res){
@@ -8,6 +9,10 @@ module.exports =  function (app,passport) {
     })
 
     app.get('/api/user', userController.list);
-    app.post('/api/user', userController.create);
+    app.post('/api/signup',passport.authenticate('local-signup',{
+            successRedirect : '/#!/profile',
+            failureRedirect : '/#!/profile',
+            failureFlash : true
+        }));
 
 };
