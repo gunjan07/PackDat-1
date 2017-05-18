@@ -1,1 +1,149 @@
-<div> Welcome to the application</div>
+<div>
+    <div>
+        <nav class="navbar">
+            <!--<div class="navbar-header">-->
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="/resources/Asset 1.PNG" style="text-align: center;width: 200px"; height="60px">
+            </a>
+            <button  class="btnsharetrip pull-right" style="margin-top: 20px"; >Share Trip</button>
+            <input type="image" src="/resources/profile.jpg" style="margin-top: 15px;margin-right: 10px" class="img-circular">
+            <!--</div>-->
+        </nav>
+        <hr style="color:#C8C7CC; margin: auto">
+    </div>
+
+    <div id ="formContent">
+        <div align="center">
+            <image src="/resources/profile.jpg" class="profile_image"/>
+            <a>
+                <label style="font-size:smaller;">Edit Profile Picture</label>
+            </a>
+        </div>
+        <br>
+
+        <table>
+            <tr>
+                <th width="20%"><label for="inputEmail">Full Name</label></th>
+                <th><input type="text" class="form-control" id="name" /></th>
+            </tr>
+            <tr>
+                <th width="20%"></th>
+                <th><label class="lowerfont">Your Public Profile will show your full name to other users.</label></th>
+            </tr>
+
+
+
+            <tr>
+                <th width="20%"><label for="inputEmail">Email</label></th>
+                <th><input type="email" class="form-control" id="inputEmail" ></th>
+            </tr>
+            <tr>
+                <th width="20%"></th>
+                <th><label class="lowerfont">We won’t share your private email address with other Packdat users.</label></th>
+            </tr>
+        </table>
+    </div >
+        <br>
+        <div align="center">
+        <table>
+            <tr>
+                <td width="20%" align="right" ><label for="inputEmail"  style="margin-right: 10px">History Of Trips (5)</label></td>
+                <td align="center">
+                    <image class="historyImage" src="/resources/Image1.png"/>
+                </td>
+                <td align="center">
+                    <image class="historyImage" src="/resources/Image2.png"/>
+                </td>
+                <td align="center">
+                    <image class="historyImage" src="/resources/Image3.png"/>
+                </td>
+                <td>
+                    <a href="#">
+                        <image src="/resources/next.png"/>
+                    </a>
+                </td>
+
+            </tr>
+            <tr>
+                <td width="20%"></td>
+                <td align="center" >
+                    <label style="display: block;">Indonesia, Bali</label>
+                    <label class="lowerfont">FEB 16 - FEB 18 2017</label>
+                </td>
+                <td align="center">
+                    <label style="display: block;">Thailand, Bangkok</label>
+                    <label class="lowerfont">MAR 16 - MAR 18 2017</label>
+                </td>
+                <td align="center">
+                    <label style="display: block;">Taiwan, Taipei</label>
+                    <label class="lowerfont">APR 16 - APR 18 2017</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<style>
+    body,html {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 700;
+        color: #666666;
+    }
+    .navbar-header{
+        margin-left:5px;
+        width:100%;
+    }
+    .btnsharetrip {
+        align:right;
+        type : submit;
+        background-color: #007AFF;
+        border: none;
+        border-radius: 5px;
+        height: 35px;
+        color:white;
+        float: right;
+        width: 90px;
+    }
+    .img-circular{
+        width: 40px;
+        padding-right: 10px;
+        height: 40px;
+        background-size: cover;
+        display: block;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        float: right;
+    }
+    .profile_image{
+        width: 25%;
+        background-size: cover;
+        display: block;
+        border-radius: 100px;
+        text-align: center;
+    }
+    .lowerfont {
+        font-size: smaller;
+        color: #95989A;
+    }
+    #formContent{
+        max-width: 40%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .form-group{
+        margin: 20px 0;
+    }
+    .form-control {
+        border: none;
+        border-bottom: .5px solid #000000;
+        border-radius: 0px;
+        box-shadow: none;
+        border-color: #95989A;
+    }
+    .historyImage{
+        width: 125px;
+        height: 125px;
+        border-radius: 10px;
+    }
+</style>
