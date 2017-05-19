@@ -10,9 +10,11 @@ module.exports =  function (app,passport) {
 
     app.get('/api/user', userController.list);
     app.post('/api/signup',passport.authenticate('local-signup',{
-            successRedirect : '/#!/profile',
-            failureRedirect : '/#!/profile',
+            successRedirect : '/profile',
+            failureRedirect : '/signup',
             failureFlash : true
         }));
+    app.get('/profile',userController.signUpSuccess);
+    app.get('/signup',userController.signUpFailure);
 
 };

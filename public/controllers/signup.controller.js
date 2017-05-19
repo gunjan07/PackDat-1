@@ -2,16 +2,17 @@
     'use strict';
     angular
         .module('packDat')
-        .controller('SignUpController',function($scope,$rootScope,UserService) {
-            console.log("$scope.user>>"+$scope.user);
-
+        .controller('SignUpController',function($scope,$rootScope,UserService,$location) {
             $scope.signup = function(user){
-                console.log("$scope.user>>"+JSON.stringify(user));
-                UserService.create($scope.user);
-                console.log("After $scope.user>>");
+                UserService.create($scope.user)
+                .then(function (response) {
+                    if(response.data.flag){
+                        console.log($location.path("/profile"));
+                    }
+                    else{
+                        console.log($location.path("/signup"));
+                    }
+                })
             };
-
-
-
         });
 })();
