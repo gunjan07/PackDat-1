@@ -1,127 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PackDat</title>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<style type="text/css">
-		body {
-		    font-family: SegoeUI-Bold, Segoe UI;
-		    font-weight: 700;
-		}
-		#closeBtn {
-			margin-top: 40px;
-			float: right;
-		}
-		#formContent{		
-			max-width: 40%;
-			margin: 0 auto;
-			text-align: left;			
-			text-transform: uppercase;
-
-		}
-		#marginonly{		
-			max-width: 40%;
-			margin: 0 auto;
-			text-align: left;		
-		}
-		.inCenter{
-			text-align: center;
-			color: #95989a;
-		}
-		label {
-			color: #95989a;
-		}
-		hr {
-			border: solid 0.3px;	
-			color: #95989a;
-		}	
-		.form-group{
-			margin: 20px 0;
-		}
-		#showPassword{
-			float: right;
-			font-size:10px;
-			color: #007aff;
-			padding-top: 5px;
-		}
-		.img-circular{
-			 width: 40px;
-			 padding-right: 10px;
-			 height: 40px;
-			 background-size: cover;
-			 display: block;
-			 border-radius: 100px;
-			 -webkit-border-radius: 100px;
-			 -moz-border-radius: 100px;
-			 float: right;
-		}
-		.btnsharetrip {
-			align:right;
-			type : submit;
-			background-color: #007AFF;
-			border: none;
-			border-radius: 5px;
-			height: 35px;
-			color:white;
-			float: right;
-			width: 90px;
-		}
-		.btnsubmitfeedback {
-			width: 35%;
-			type : submit;
-			background-color: yellow;
-			border: none;
-			height: 35px;
-			margin: 20px 0;
-		}
-		.btn-facebook{
-			color:#fff;
-			background-color:#3b5998;
-			border-color:rgba(0,0,0,0.2)
-		}
-		.spacing{
-			padding: 0 8px;
-			font-size:18px;			
-		}
-		.body {
-		   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-		   font-weight: 300;
-		   size=2;
-		}
-		.navbar-header{
-		  margin-left:5px;
-		  width:100%;
-		}
-	</style>
-</head>
-<body>
-
 <div class="container">
 
 	<div>
 		<nav class="navbar">
-		
-		    <div class="navbar-header">
+		    <!--<div class="navbar-header">-->
 				  <a class="navbar-brand" href="#">
-					<img alt="Brand" src="Asset 1.PNG">		     
+					<img alt="Brand" src="/resources/Asset 1.PNG" style="text-align: center;width: 200px"; height="60px">
 				</a>
-				
-				 <button  class="btnsharetrip pull-right" padding="center" >Share Trip</button>
-				<input type="image" src="profile.jpg" class="img-circular">
-			</div>
+				 <button  class="btnsharetrip pull-right" style="margin-top: 20px"; >Share Trip</button>
+				<input type="image" src="/resources/profile.jpg" style="margin-top: 15px;margin-right: 10px" class="img-circular">
+			<!--</div>-->
 		</nav>
-		 <hr style="color:#C8C7CC;">
+		 <hr style="color:#C8C7CC; margin: auto">
 	</div>
 
 	<div id ="marginonly">
@@ -155,5 +44,92 @@
 
 </div>
 
-</body>
-</html>
+<style type="text/css">
+	body {
+		font-family: SegoeUI-Bold, Segoe UI;
+		font-weight: 700;
+	}
+	#closeBtn {
+		margin-top: 40px;
+		float: right;
+	}
+	#formContent{
+		max-width: 40%;
+		margin: 0 auto;
+		text-align: left;
+		text-transform: uppercase;
+
+	}
+	#marginonly{
+		max-width: 40%;
+		margin: 0 auto;
+		text-align: left;
+	}
+	.navbar{
+		text-align: center;
+	}
+	label {
+		color: #95989a;
+	}
+	hr {
+		border: solid 0.3px;
+		color: #95989a;
+	}
+	.form-group{
+		margin: 20px 0;
+	}
+	#showPassword{
+		float: right;
+		font-size:10px;
+		color: #007aff;
+		padding-top: 5px;
+	}
+	.img-circular{
+		width: 40px;
+		height: 40px;
+		background-size: cover;
+		display: block;
+		border-radius: 100px;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		float: right;
+		text-align: center;
+	}
+	.btnsharetrip {
+		align:right;
+		type : submit;
+		background-color: #007AFF;
+		border: none;
+		border-radius: 5px;
+		height: 35px;
+		color:white;
+		float: right;
+		width: 90px;
+	}
+	.btnsubmitfeedback {
+		width: 35%;
+		type : submit;
+		background-color: yellow;
+		border: none;
+		height: 35px;
+		margin: 20px 0;
+	}
+	.btn-facebook{
+		color:#fff;
+		background-color:#3b5998;
+		border-color:rgba(0,0,0,0.2)
+	}
+	.spacing{
+		padding: 0 8px;
+		font-size:18px;
+	}
+	.body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+
+	}
+	.navbar-header{
+		margin-left:5px;
+		width:100%;
+	}
+</style>

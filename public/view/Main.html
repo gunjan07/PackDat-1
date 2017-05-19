@@ -1,235 +1,205 @@
-<div>
-    <div class="bg col-md-5">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <img alt="Brand" src="Asset 1.PNG">
-            </a>
-        </div>
-    </div>
-    <div class="col-md-7">
-        <div class="tab">
-            <button class="tablinks active" onclick="openCity(event, 'thetrip')">THE TRIP</button>
-            <button class="tablinks" onclick="openCity(event, 'invitefriends')">INVITE FRIENDS</button>
-        </div>
+	<div class="bg col-md-5" >
+		<div class="navbar-header">
+		      <a class="navbar-brand" href="#">
+		        <img alt="Brand" src="/resources/Asset 1.PNG">
+		      </a>		       
+		</div>
+	</div>
+	<div class="col-md-7">
+		<div class="tab" >
+			<button class="tablinks active" onclick="openCity(event, 'thetrip')">THE TRIP</button>
+			<button class="tablinks" onclick="openCity(event, 'invitefriends')">INVITE FRIENDS</button>
+		</div>
+	
+		<div id="thetrip" class="tabcontent">
+			<div id = "content">
+				<form>
+				<h1> Your Trip </h1>
+				<h4> Where to? Tell us where and when you are travelling. </h4>
+				<br>
+					<div class="form-group flexContainer">
+						<image src="compass.png" style="width:1;height:1;margin-right:5px;"/>
+						<input type="text disabled" class="inputField form-control" id="inputPassword"  placeholder="Anywhere">
+					</div>
+					<div class="form-group flexContainer">
+						<image src="calendar.png" style="width:1;height:1;margin-right:5px;"/>
+						<input type="text disabled" class="inputField form-control" id="inputPassword"  placeholder="Anytime">
+					</div>
+				  <button type="submit" class="btnCustom">Confirm</button>
+				</form>			
+			</div>
+		</div>
 
-        <div id="thetrip" class="tabcontent">
-            <div>
-                <form>
-                    <h1> Your Trip </h1>
-                    <h4> Where to? Tell us where and when you are travelling. </h4>
-                    <br>
-                    <div class="form-group flexContainer">
-                        <img src="compass.png" style="width:1;height:1;margin-right:5px;">
-                            <input type="text disabled" class="inputField form-control" id="inputPassword"
-                                   placeholder="Anywhere">
-                    </div>
-                    <div class="form-group flexContainer">
-                        <img src="calendar.png" style="width:1;height:1;margin-right:5px;">
-                            <input type="text disabled" class="inputField form-control" id="inputPassword"
-                                   placeholder="Anytime">
-                    </div>
-                    <button type="submit" class="btnCustom">Confirm</button>
-                </form>
-            </div>
 
-        </div>
+		<div id="invitefriends" class="tabcontent" style="display:none" >
+			<div id = "content">
+				<form>
+				<h1> Invite Friends </h1>
+				<h4> Add your friends into this Trip and plan it together. </h4>
 
-        <div id="invitefriends" class="tabcontent" style="display:none">
-            <div>
-                <form>
-                    <h1> Invite Friends </h1>
-                    <h4> Add your friends into this Trip and plan it together. </h4>
+					<i class="fa fa-facebook"></i>
+					<a class="btn btn-block btn-social btn-facebook" style="margin-top: 30px;margin-bottom: 50px;">
+						Send to facebook Messenger
+					</a>
 
-                    <i class="fa fa-facebook"></i>
-                    <a class="btn btn-block btn-social btn-facebook" style="margin-top: 30px;margin-bottom: 50px;">
-                        Send to facebook Messenger
-                    </a>
+				  <div class="form-group flexContainer">
+					  <image src="/resources/attachment.png" style="width:1;height:1;margin-right:5px;"></image>
+					<input type="text disabled" class="inputField form-control" id="Link"  placeholder="www.packdat.com/linktomytrip">
+					<span id="copylink">copy link</span>
+				  </div>
+				  <div class="form-group flexContainer">
+					  <image src="/resources/envelope.png" style="width:1;height:1;margin-right:5px;"></image>
+					<input type="email" class="inputField form-control" id="friend_email"  placeholder="Your friends' email address">
+					<span id="showPassword">send invite</span>
+				  </div>
+				  <button type="submit" class="btnCustom">Create My Trip</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
-                    <div class="form-group flexContainer">
-                        <img src="attachment.png" style="width:1;height:1;margin-right:5px;">
-                            <input type="text disabled" class="inputField form-control inputPassword"
-                                   placeholder="www.packdat.com/linktomytrip">
-                            <span class="showPassword">copy link</span>
-                    </div>
-                    <div class="form-group flexContainer">
-                        <img src="envelope.png" style="width:1;height:1;margin-right:5px;">
-                            <input type="email" class="inputField form-control" id="inputPassword"
-                                   placeholder="Your friends' email address">
-                            <span class="showPassword">send invite</span>
-                    </div>
-                    <button type="submit" class="btnCustom">Create My Trip</button>
-                </form>
+<style type="text/css">
+	body,html {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 700;
+		height: 100%;
+		margin: 0;
+	}
+	/* Style the tab */
+	div.tab {
+		overflow: hidden;
+		background-color: #fff;
+	}
+	/* Style the buttons inside the tab */
+	div.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+	}
 
-            </div>
-        </div>
-    </div>
-</div>
-    <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+	/* Change background color of buttons on hover */
+	div.tab button:hover {
+		background-color: #ddd;
+	}
 
-    <style type="text/css">
-        body, html {
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            font-weight: 700;
-            height: 100%;
-            margin: 0;
-        }
+	/* Create an active/current tablink class */
+	div.tab button.active {
+		border-bottom: 2px solid #007AFF;
+		color:#007AFF;
+	}
+	/* Style the tab content */
+	.tabcontent {
+		-webkit-animation: fadeEffect 1s;
+		animation: fadeEffect 1s;
+		text-align:center;
+		margin-top:5%;
 
-        /* Style the tab */
-        div.tab {
-            overflow: hidden;
-            background-color: #fff;
-        }
+	}
+	/* Fade in tabs */
+	@-webkit-keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
 
-        /* Style the buttons inside the tab */
-        div.tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            font-size: 17px;
-        }
+	@keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
 
-        /* Change background color of buttons on hover */
-        div.tab button:hover {
-            background-color: #ddd;
-        }
+	.bg {
+		background-image: url("/resources/Main_image.png");
+		background-size: 100% 100%;
+		height: 100%;
 
-        /* Create an active/current tablink class */
-        div.tab button.active {
-            border-bottom: 2px solid #007AFF;
-            color: #007AFF;
-        }
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
-        /* Style the tab content */
-        .tabcontent {
-            -webkit-animation: fadeEffect 1s;
-            animation: fadeEffect 1s;
-            text-align: center;
-            margin-top: 5%;
+	#formContent{
+		align:"center";
+	}
+	.inCenter{
+		text-align: center;
+		color: #95989a;
+	}
+	label {
+		color: #95989a;
+	}
+	hr {
+		border: solid 0.3px;
+		color: #95989a;
+	}
+	.form-control {
+		border: none;
+		border-bottom: .5px solid #000000;
+		border-radius: 0px;
+		box-shadow: none;
+	}
+	.form-group{
+		margin: 30px 0;
+	}
+	#showPassword{
+		float: right;
+		font-size:12px;
+		color: #007aff;
+		padding-top: 5px;
+	}
+	.btnCustom {
+		width: 100%;
+		background-color: yellow;
+		border: none;
+		height: 35px;
+		margin: 20px 0;
+	}
+	.btn-facebook{
+		color:#fff;
+		background-color:#0084FF;
+		border-color:rgba(0,0,0,0.2)
+	}
+	.spacing{
+		padding: 0 8px;
+		font-size:18px;
+	}
+	.flexContainer {
+		display: flex;
+	}
 
-        }
+	.inputField {
+		flex: 1;
+	}
+	hr {
+		border: solid 0.3px;
+		color: #95989a;
+	}
+	form
+	{
+		display: inline-block;
+		text-align: center;
+	}
+	#inner {
+		display: table;
+		margin: 0 auto;
+	}
 
-        /* Fade in tabs */
-        @-webkit-keyframes fadeEffect {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
+</style>
 
-        @keyframes fadeEffect {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .bg {
-            background-image: url("Main_image.png");
-            background-size: 100% 100%;
-            height: 100%;
-
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        #formContent {
-            align: "center";
-        }
-
-        .inCenter {
-            text-align: center;
-            color: #95989a;
-        }
-
-        label {
-            color: #95989a;
-        }
-
-        hr {
-            border: solid 0.3px;
-            color: #95989a;
-        }
-
-        .form-control {
-            border: none;
-            border-bottom: .5px solid #000000;
-            border-radius: 0px;
-            box-shadow: none;
-        }
-
-        .form-group {
-            margin: 30px 0;
-        }
-
-        .showPassword {
-            float: right;
-            font-size: 12px;
-            color: #007aff;
-            padding-top: 5px;
-        }
-
-        .btnCustom {
-            width: 100%;
-            background-color: yellow;
-            border: none;
-            height: 35px;
-            margin: 20px 0;
-        }
-
-        .btn-facebook {
-            color: #fff;
-            background-color: #0084FF;
-            border-color: rgba(0, 0, 0, 0.2)
-        }
-
-        .spacing {
-            padding: 0 8px;
-            font-size: 18px;
-        }
-
-        .flexContainer {
-            display: flex;
-        }
-
-        .inputField {
-            flex: 1;
-        }
-
-        hr {
-            border: solid 0.3px;
-            color: #95989a;
-        }
-
-        form {
-            display: inline-block;
-            text-align: center;
-        }
-
-        #inner {
-            display: table;
-            margin: 0 auto;
-        }
-
-    </style>
+<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
