@@ -1,0 +1,147 @@
+<div >
+        <div class="header">
+            <nav class="navbar">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="/resources/Asset 1.PNG" style="text-align: center;width: 200px"; height="60px">
+                </a>
+                <button  class="btnsharetrip pull-right" style="margin-top: 20px"; >Share Trip</button>
+                <input type="image" src="/resources/profile.jpg" style="margin-top: 15px;margin-right: 10px" class="img-circular">
+            </nav>
+            <hr style="color:#C8C7CC; margin: auto">
+        </div>
+
+        <div class="menu">
+            <h4>SINGAPORE</h4>
+            <h5>28 MAR - 30 MAR 2017</h5>
+        </div>
+
+        <div class="main">
+            <form style="height: 60px;margin: auto;text-align: center" >
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+            <div class="tab" >
+                <button class="tablinks active" onclick="openCity(event,'thetrip')">ALL</button>
+                <button class="tablinks" onclick="openCity(event, 'thetrip')">HIPSTER</button>
+                <button class="tablinks " onclick="openCity(event,'thetrip')">TASTE BUDS</button>
+                <button class="tablinks" onclick="openCity(event, 'thetrip')">NIGHT OWL</button>
+                <button class="tablinks " onclick="openCity(event,'thetrip')">HIDDEN GEM</button>
+                <button class="tablinks" onclick="openCity(event, 'thetrip')">MUST VISIT</button>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+<style type="text/css">
+    body {
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+    }
+    .navbar{
+        text-align: center;
+        margin: auto;
+    }
+    .navbar-brand{
+        padding: 10px;
+    }
+    label {
+        color: #95989a;
+    }
+    hr {
+        border: solid 0.3px;
+        color: #95989a;
+    }
+    .img-circular{
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        display: block;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        float: right;
+        text-align: center;
+    }
+    .btnsharetrip {
+        align:right;
+        type : submit;
+        background-color: #007AFF;
+        border: none;
+        border-radius: 5px;
+        height: 35px;
+        color:white;
+        float: right;
+        width: 90px;
+        margin: 10px;
+    }
+    input[type=text] {
+        width: 70%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background: url(../resources/Searchicon.png) no-repeat right center;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+
+    }
+
+    .header {
+        text-align: center;
+    }
+    .menu {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        text-align: center;
+    }
+    .main {
+        width: 75%;
+        float: left;
+        padding: 15px;
+    }
+    /* Style the tab */
+    div.tab {
+        overflow: hidden;
+        background-color: #fff;
+    }
+    /* Style the buttons inside the tab */
+    div.tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 20px;
+        font-size: 15px;
+        color: #8A8A8F;
+    }
+
+    /* Change background color of buttons on hover */
+    div.tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    div.tab button.active {
+        border-bottom: 2px solid #007AFF;
+        color:#007AFF;
+    }
+    /* Style the tab content */
+    .tabcontent {
+        -webkit-animation: fadeEffect 1s;
+        animation: fadeEffect 1s;
+        text-align:center;
+        margin-top:5%;
+
+    }
+
+
+</style>

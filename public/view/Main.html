@@ -1,29 +1,31 @@
-	<div class="bg col-md-5" >
-		<div class="navbar-header">
+<div>
+
+	<div class="col-md-5 image" >
+			<img class="bg" src="/resources/maingirl.PNG"  style="position: absolute">
 		      <a class="navbar-brand" href="#">
-		        <img alt="Brand" src="/resources/Asset 1.PNG">
-		      </a>		       
-		</div>
+		        <img alt="Brand" src="/resources/Asset 1.PNG"  style="position: relative">
+		      </a>
+			<h3 class="bottomleft" style="position: relative"> Check Text</h3>
 	</div>
 	<div class="col-md-7">
 		<div class="tab" >
-			<button class="tablinks active" onclick="openCity(event, 'thetrip')">THE TRIP</button>
+			<button class="tablinks active" onclick="openCity(event,'thetrip')">THE TRIP</button>
 			<button class="tablinks" onclick="openCity(event, 'invitefriends')">INVITE FRIENDS</button>
 		</div>
 	
 		<div id="thetrip" class="tabcontent">
-			<div id = "content">
+			<div id = "data">
 				<form>
 				<h1> Your Trip </h1>
 				<h4> Where to? Tell us where and when you are travelling. </h4>
 				<br>
 					<div class="form-group flexContainer">
-						<image src="compass.png" style="width:1;height:1;margin-right:5px;"/>
-						<input type="text disabled" class="inputField form-control" id="inputPassword"  placeholder="Anywhere">
+						<image src="/resources/compass.png" style="margin-right:5px"/>
+						<input type="text disabled" class="inputField form-control" id="place"  placeholder="Anywhere">
 					</div>
 					<div class="form-group flexContainer">
-						<image src="calendar.png" style="width:1;height:1;margin-right:5px;"/>
-						<input type="text disabled" class="inputField form-control" id="inputPassword"  placeholder="Anytime">
+						<image src="/resources/calendar.png" style="margin-right:5px;"/>
+						<input type="text disabled" class="inputField form-control" id="date"  placeholder="Anytime">
 					</div>
 				  <button type="submit" class="btnCustom">Confirm</button>
 				</form>			
@@ -43,12 +45,12 @@
 					</a>
 
 				  <div class="form-group flexContainer">
-					  <image src="/resources/attachment.png" style="width:1;height:1;margin-right:5px;"></image>
+					  <image src="/resources/attachment.png" style="margin-right:5px;"></image>
 					<input type="text disabled" class="inputField form-control" id="Link"  placeholder="www.packdat.com/linktomytrip">
 					<span id="copylink">copy link</span>
 				  </div>
 				  <div class="form-group flexContainer">
-					  <image src="/resources/envelope.png" style="width:1;height:1;margin-right:5px;"></image>
+					  <image src="/resources/envelope.png" style="margin-right:5px;"></image>
 					<input type="email" class="inputField form-control" id="friend_email"  placeholder="Your friends' email address">
 					<span id="showPassword">send invite</span>
 				  </div>
@@ -57,6 +59,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 
 <style type="text/css">
 	body,html {
@@ -111,13 +114,10 @@
 	}
 
 	.bg {
-		background-image: url("/resources/Main_image.png");
-		background-size: 100% 100%;
-		height: 100%;
-
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+
 	}
 
 	#formContent{
@@ -185,10 +185,16 @@
 		display: table;
 		margin: 0 auto;
 	}
+	.bottomleft {
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+		font-size: 18px;
+	}
 
 </style>
 
-<script>
+<script type="text/javascript">
 		function openCity(evt, cityName) {
 			var i, tabcontent, tablinks;
 			tabcontent = document.getElementsByClassName("tabcontent");
@@ -202,4 +208,4 @@
 			document.getElementById(cityName).style.display = "block";
 			evt.currentTarget.className += " active";
 		}
-	</script>
+</script>

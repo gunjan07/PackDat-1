@@ -24,6 +24,9 @@ angular
                 .when('/Feedback',{
                     templateUrl: '/view/Feedback.html'
                 })
+                    .when('/Plantrip',{
+                    templateUrl: '/view/tripplaces.html'
+                })
 
 
         }]);
