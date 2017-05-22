@@ -12,13 +12,10 @@ module.exports = {
             res.status(500).json(error);
         });
     },
-    create(req, res) {
-        models.user.create(req.body)
-            .then(function (newUser) {
-                res.status(200).json(newUser);
-            })
-            .catch(function (error){
-                res.status(500).json(error);
-            });
+    signUpSuccess(req,res){
+        res.status(200).json({flag:true});
     },
+    signUpFailure(req,res){
+        res.status(200).json({flag:false});
+    }
 };

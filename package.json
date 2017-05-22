@@ -23,6 +23,7 @@
     "connect-flash" : "~0.1.1",
     "bcrypt-nodejs" : "latest",
     "sequelize ": "latest",
-    "express-handlebars": "~2.0.0"
+    "express-handlebars": "~2.0.0",
+    "nodemailer": "^2.7.0"
   }
 }

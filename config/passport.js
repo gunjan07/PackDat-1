@@ -41,6 +41,8 @@ module.exports = function(passport, user) {
                             return done(null, false);
                         }
                         if (newUser) {
+                            console.log("Newuser created")
+                            console.log(JSON.stringify(newUser));
                             return done(null, newUser);
                         }
                     });
